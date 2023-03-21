@@ -68,16 +68,15 @@ public class Strings {
      * reversing the string
      */
 
-    public void reverseString() {
-        System.out.println("Enter your string");
+    public String reverseString(String word) {
         String str = "";
         char ch;
-        String sc = new Scanner(System.in).next();
-        for (int i = sc.length() - 1; i >= 0; i--) {
-            ch = sc.charAt(i);
+//        String sc = new Scanner(System.in).next();
+        for (int i = word.length() - 1; i >= 0; i--) {
+            ch = word.charAt(i);
             str += ch;
         }
-        System.out.println(str);
+        return str;
     }
 
     /**
@@ -103,12 +102,13 @@ public class Strings {
      * making strings to UpperCase
      */
 
-    public void makeUpper() {
-        String lower = "Hello World";
+    public String  makeUpper(String str) {
+        String lower = "hello";
         System.out.println(lower.toUpperCase());
-        StringBuilder lowers = new StringBuilder("Hello World");
+        StringBuilder lowers = new StringBuilder("hello");
         String uppers = lowers.toString().toUpperCase();
-        System.out.println(uppers);
+
+        return uppers;
     }
 
     /**

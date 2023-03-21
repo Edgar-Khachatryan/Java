@@ -1,7 +1,5 @@
 package javastrings;
 
-import java.util.Arrays;
-
 public class Main {
 
 
@@ -10,11 +8,11 @@ public class Main {
         str.stringConcat();
         str.stringBuilderConcat();
         str.stringLetrals();
-        str.reverseString();
+        str.reverseString("hello");
         String line = "We are living in an yellow submarine. We don't  have anything";
 
         System.out.println(str.countingToken(line,"at"));
-        str.makeUpper();
+        str.makeUpper("hello");
         str.replaceSpaces();
         str.replaceSpaces();
         System.out.println(str.deletingA(line));
