@@ -27,12 +27,11 @@ public class Strings {
     public void testUpper() {
         javastrings.Strings str = new javastrings.Strings();
         str.makeUpper("hello");
-        assertEquals("HELLO", str.makeUpper("hello"));
-    }
+        assertEquals("HELLO", str.makeUpper("hello"));}
 
 
     /**
-     * testing to delete a
+    * testing to delete a
      */
 
     @Test
